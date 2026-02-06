@@ -48,10 +48,69 @@ nav > ul > li:last-of-type {
     margin-right: 55px;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover > .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 120px;
+    background-color: lightblue;
+    list-style: none;
+
+    flex-direction: column;
+}
+
 .home-img {
+    overflow: hidden;
     height: calc(97vh - 120px);
     background-image: url('../../img/tep-aueb.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+.home-title {
+    width: 55%;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    height: 150px;
+    background-color: #762124;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 10px;
+}
+
