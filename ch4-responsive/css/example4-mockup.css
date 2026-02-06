@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #762124;
+}
+
+.logo > img {
+    height: 120px;
+    width: auto;
+}
+
+nav {
+    width: 550px;
+    /* background-color: aqua; */
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    /* background-color: green; */
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav > ul > li:last-of-type {
+    margin-right: 55px;
+}
+
+.home-img {
+    height: calc(97vh - 120px);
+    background-image: url('../../img/tep-aueb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
