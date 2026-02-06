@@ -30,7 +30,18 @@
                     <li><a href="#">We Are</a></li>
                 </ul>
             </nav>
+            
+            <div class="navbar-toggler">
+                <button type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </header>
+
+        <div class="menu-toggler">
+            <ul><a href="">menu 1</a></ul>
+            <ul><a href="">menu 2</a></ul>
+        </div>
 
         <!--Image Slider-->
         <div class="home-img">
@@ -40,34 +51,49 @@
         </div>
     </div>
 
-    <div>
-        <!--Main-->
-        <main class="mt-2 mb-2">
-            <h2 class="mb-2">Coding Factory</h2>
-            <section>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae cum veritatis labore officia suscipit iste repellat pariatur ratione, exercitationem cupiditate tempora temporibus facilis placeat ullam ab nihil facere veniam blanditiis.
-            </section>
-            <section>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quas nisi enim aliquid adipisci voluptatem, cumque vel eligendi exercitationem corrupti sed cum dolore, rem quam ullam debitis eius doloremque accusantium!
-            </section>
-            <section>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio cum natus, error asperiores dolorum excepturi quo rerum quos earum rem exercitationem est quae veniam eveniet, quidem placeat pariatur tempora explicabo?
-            </section>
-            <section>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ipsam aliquam officiis velit voluptatem quae esse delectus unde, dolore natus deleniti accusamus quidem deserunt rem necessitatibus eligendi! Iste, quo nesciunt.
-            </section>
-        </main>
 
-        <!--Footer-->
-        <footer>
-            <div>&copy Coding Factory 2026 - Athens University of....</div>
+    <!--Main-->
+    <main class="mt-2 mb-2">
+        <h2 class="mb-2">Coding Factory</h2>
+        <section>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae cum veritatis labore officia suscipit iste repellat pariatur ratione, exercitationem cupiditate tempora temporibus facilis placeat ullam ab nihil facere veniam blanditiis.
+        </section>
+         <section>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quas nisi enim aliquid adipisci voluptatem, cumque vel eligendi exercitationem corrupti sed cum dolore, rem quam ullam debitis eius doloremque accusantium!
+        </section>
+        <section>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio cum natus, error asperiores dolorum excepturi quo rerum quos earum rem exercitationem est quae veniam eveniet, quidem placeat pariatur tempora explicabo?
+        </section>
+        <section>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ipsam aliquam officiis velit voluptatem quae esse delectus unde, dolore natus deleniti accusamus quidem deserunt rem necessitatibus eligendi! Iste, quo nesciunt.
+        </section>
+     </main>
+
+    <!--Footer-->
+     <footer>
+        <div>&copy Coding Factory 2026 - Athens University of....</div>
             <div>
                 <span>Follow Us</span>
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-linkedin"></i>
 
             </div>
-        </footer>
-    </div>
+     </footer>
+
+     <script>
+        const img = document.querySelector('.home-img')
+        const toggleBtn = document.querySelector('.navbar-toggler')
+        const navbarToggle = document.querySelector('.menu-toggler')
+        const main = document.getElementsByTagName('.main')
+        const footer = document.querySelector('.footer')
+
+        toggleBtn.addEventListener('click',function() {
+            img.classList.toggle('hidden')
+            navbarToggle.classList.toggle('show')
+            main.classList.toggle('hidden')
+            footer.classList.toggle('hidden')
+        })
+     </script>
+    
 </body>
 </html>

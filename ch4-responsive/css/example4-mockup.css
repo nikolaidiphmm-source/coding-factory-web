@@ -114,3 +114,21 @@ footer {
     padding: 0 10px;
 }
 
+.navbar-toggler{
+    display: none;
+    margin-right: 40px;
+}
+
+.menu-toggler {
+    display: none;
+}
+
+@media (max-width:992px) {
+    nav {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+}
