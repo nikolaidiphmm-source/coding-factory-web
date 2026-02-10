@@ -56,10 +56,46 @@ footer {
     width: auto;
 }
 
+/* Stepper Styling */
+.stepper-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--lightgrey-300);
+}
+
+.active {
+    background-color: var(--gov-blue);
+}
+
+.stepper-border-bottom{
+    display: block;
+    border-bottom: 1px solid var(--lightgrey-300);
+}
+
+/* info styling */
+.info {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--gov-blue);
+    color: var(--lightgrey-200);
+    text-align: center;
+    line-height: 20px;
+}
+
 /* Displays */
 .d-flex {
     display: flex;
     justify-content: space-between;
+}
+
+.d-block {
+    display: block;
 }
 
 .flex-row {
@@ -68,6 +104,10 @@ footer {
 
 .align-center {
     align-items: center;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
 }
 
 /* Marging & Paddings*/
@@ -107,6 +147,19 @@ footer {
     margin-top: 2rem;
 }
 
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-05{
+    margin-left: 0.5rem;
+}
+
 /* Backgrounds */
 .bg-gov-blue {
     background-color: var(--gov-blue);
@@ -120,13 +173,25 @@ footer {
     background-color: var(--lightgrey-300);
 }
 
+.bg-lightgrey-200 {
+    background-color: var(--lightgrey-200);
+}
+
 /* Text Styling*/
 .font-size-1 {
     font-size: 1rem;
 }
 
+.font-size-2 {
+    font-size: 2rem;
+}
+
 .text-lightgrey-200 {
     color: var(--lightgrey-200);
+}
+
+.text-lightgrey-500 {
+    color: var(--lightgrey-500);
 }
 
 .text-center {
@@ -169,4 +234,38 @@ footer {
 
 .border-radius-15 {
     border-radius: 15%;
+}
+
+.border-lightgrey-300 {
+    border-color: var(--lightgrey-300);
+
+}
+
+.no-border {
+    border: 0;
+}
+
+/*Width & Height*/
+.col-1{ width:8.33%}
+.col-2{ width:16.66%}
+.col-3{ width:25%}
+.col-4{ width:33.33%}
+.col-5{ width:41.66%}
+.col-6{ width:50%}
+.col-7{ width:58.33%}
+.col-8{ width:66.66%}
+.col-9{ width:75%}
+.col-10{ width:83.33%}
+.col-11{ width:91.66%}
+.col-12{ width:100%}
+
+.h-2 {
+    height: 2rem;
+}
+
+/*Styling Forms*/
+.text-info {
+    color: var(--lightgrey-500);
+    font-size: smaller;
+    padding-left: 1rem;
 }
