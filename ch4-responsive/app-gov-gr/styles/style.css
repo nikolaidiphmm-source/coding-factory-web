@@ -39,6 +39,7 @@ nav {
 main {
     flex: 80%;
     height: calc(100vh - 105px);
+    overflow: auto;
 }
 
 aside {
@@ -110,6 +111,10 @@ footer {
     flex-grow: 1;
 }
 
+.justify-end {
+    justify-content: end;
+}
+
 /* Marging & Paddings*/
 .mr-1 {
     margin-right: 1rem;
@@ -175,6 +180,10 @@ footer {
 
 .bg-lightgrey-200 {
     background-color: var(--lightgrey-200);
+}
+
+.bg-white {
+    background-color: var(--white);
 }
 
 /* Text Styling*/
@@ -261,6 +270,10 @@ footer {
 
 .h-2 {
     height: 2rem;
+}
+
+.h-25 {
+    height: 2.5rem;
 }
 
 /*Styling Forms*/
