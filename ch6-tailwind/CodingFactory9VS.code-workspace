@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../CV"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CodingFactory9VS"
+	}
+}
